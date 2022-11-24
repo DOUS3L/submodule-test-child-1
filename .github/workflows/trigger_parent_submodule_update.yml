@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Trigger parent repository update
         run: |
-          curl -X POST https://api.github.com/repos/smallstepman/github-actions-submodule-test-parent/dispatches \
+          curl -X POST https://api.github.com/repos/DOUS3L/submodule-test-parent/dispatches \
           -H 'Accept: application/vnd.github.everest-preview+json' \
           -u smallstepman:${{ secrets.ACCESS_TOKEN }} \
           --data '{"event_type": "ping", "client_payload": { "repository": "arst" }}'
